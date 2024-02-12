@@ -1,0 +1,38 @@
+/* Default style for buttons */
+body {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+button {
+    background-color: #04AA6D;
+    max-height: 50px;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/* button 1 static style */
+.btn1 {
+    background-color: #00eaff;
+    color: black;
+    border: 2px solid black;
+}
+
+/* button 1 hover style */
+.btn1:hover {
+    background-color: #0c4f92;
+    color: white;
+    box-shadow: 0 12px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.btn1:active {
+    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.2);
+    transform: translateY(2px);
+  }
