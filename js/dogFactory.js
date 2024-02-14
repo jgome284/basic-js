@@ -64,3 +64,34 @@ function dogFactory(name, breed, weight) {
     }
   }
 
+  bert = dogFactory('berty', 'golden doodle', 100)
+
+  console.log(bert.name)   // 'berty'
+  console.log(bert.breed)  // 'golden doodle'
+  console.log(bert.weight) // 100
+  console.log(bert.bark()) // 'ruff! ruff!'
+  bert.eatTooManyTreats(); // increase weight by 1
+  console.log(bert.weight) // 101
+  
+  bert.name = 10;
+  bert.breed = 11;
+  bert.weight = '90' 
+  
+  marty = dogFactory(10, 20, 'marty')
+  console.log(marty.name)   // undefined
+  console.log(marty.breed)  // undefined
+  console.log(marty.weight) // undefined
+  console.log(marty.bark()) // 'ruff! ruff!'
+  marty.eatTooManyTreats(); // increase weight by 1
+  console.log(marty.weight) // NaN
+  
+  marty.name = 'marty';
+  marty.breed = 'french bulldog';
+  marty.weight = 20; 
+  console.log(marty.name)   // 'marty'
+  console.log(marty.breed)  // 'french bulldog'
+  console.log(marty.weight) // 20
+  console.log(marty.bark()) // 'ruff! ruff!'
+  marty.eatTooManyTreats(); // increase weight by 1
+  console.log(marty.weight) // 21
+  
